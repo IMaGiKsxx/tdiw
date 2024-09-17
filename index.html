@@ -5,9 +5,13 @@
         <title> UAB/Enginyeria </title>
     </head>
     <body>
-        <!-- SECCIÓ 1 - Capçalera -->
         <header>
-            <!-- completa -->
+            <a href="http://www.uab.cat" target="_blank">
+                <img src="img\uab.png" alt="Logotip de la UAB" width="200"/>
+            </a>
+
+            <h1> Escola d'Eniyneria</h1>
+            <p> Benvinguts a l'Escola d'Engiyneria de la UAB </p>
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
@@ -15,7 +19,21 @@
                 <h3>Graus disponibles: </h3>
             </header>
             <ul>
-                <!-- completa -->
+                <a href="https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/enginyeria-informatica-1216708251447.html?param1=1263367146646" target="_blank">
+                    <li> Enginyeria Informàtica </li>
+                </a>
+                <ul>
+                    <li>Menció Enginyeria del software</li>
+                    <li>Menció Enginyeria de Computadors</li>
+                    <li>Menció Computació</li>
+                    <a href="https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/enginyeria-informatica-mencio-de-tecnologies-de-la-informacio-enginyeria-de-sistemes-de-telecomunicacio-1216708251447.html?param1=1345654047869" target="_blank">
+                        <li>Menció Tecnologies de la informació</li>
+                    </a>
+
+                </ul>
+                <li> Enginyeria de Sistemes de Telecomunicació </li>
+                <li> Enginyeria Electrònica de Telecomunicació </li>
+                <li> Enginyeria Química </li>
             </ul>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
@@ -25,8 +43,26 @@
             </header>
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
-                <!-- completa -->
+                Nom complet:<input type="text" name="nom"><br />
+                Contrasenya:<input type="password" name="psw"><br />
+                Grau:<select name="mencio">
+                    <option value="GEI">Enginyeria Informàtica</option>
+                    <option value="GEST">Enginyeria de Sistemes de Telecomunicació</option>
+                    <option value="GEET">Enginyeria Electrònica de Telecomunicació</option>
+                    <option value="GEQ">Enginyeria Química</option>
+                    </select><br />
+            
+                <p>Tria la mencióo que més t'atreu:</p>
+                <select name="mencio">
+                    <option value="TI">Tec. Inf.</option>
+                    <option value="EC">Eng. Comp.</option>
+                    <option value="ES">Eng. Soft.</option>
+                    <option value="C">Computació</option>
+                    </select><br /><br />
+                <input type="submit" value="Registrar-me">
             </form>
+
+                
             <hr />
         </section>
         <!-- SECCIÓ 4 -  Estadístiques de matriculació per grau -->
@@ -35,7 +71,10 @@
                 <h3>Estadístiques de matriculació per graus</h3>
             </header>
             <table border="1">
-                <!-- completa -->
+                <tr>
+                    <th>Escola d'Eengiyneria </th>
+                    <th>Ciències </th>
+                </tr>
             </table>
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
